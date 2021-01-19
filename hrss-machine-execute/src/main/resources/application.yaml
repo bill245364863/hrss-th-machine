@@ -1,0 +1,21 @@
+
+netty:
+  port: 10086
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    path: ./
+    name: bill.log
+  level: {com.apex.hrssmachineexecute: info}
+spring:
+  application:
+    name: bill-application
+project:
+  secret:
+    key: 2a29801f65c739bf77ce5347143b92fa
+  appCore:
+    key: d19d534a7ae770606d6308350bd30f71
+  appId: fcs-20201120
+  address:
+    connect: http://192.168.40.61:9887
